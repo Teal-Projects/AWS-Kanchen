@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+#==================================================================
+#
+# Script Name	:                                                                                              
+# Description	:                                                                                 
+# Args          :                                                                                           
+# Author       	: kanchen Monnin (kanchen.monnin@neofonie.de)                                             
+#
+#==================================================================
+
+AWS_VAULT=${AWS_NEO_VAULT:-main}
+
+which aws-vault >/dev/null && aws-vault exec ${AWS_VAULT} -- $* || $*

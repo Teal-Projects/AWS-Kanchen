@@ -1,0 +1,13 @@
+{
+        "region": "us-west-2",
+        "instance_type": "t2.micro",
+        "ssh_username": "ec2-user",
+        "ssh_keypair_name": "ssh_key_name",
+        "ssh_private_key_file": "../inspec_files/ssh_key_name",
+        "ssh_pty": "true",
+        "vpc_id": "vpc-xxxxxxxxx",
+        "subnet_id": "subnet-xxxxxxxxx",
+        "security_group_id": "sg-xxxxxxxxxx",
+        "iam_instance_profile": "YourInstanceProfile",
+        "ami_users": "123456,789123,456789"
+    }

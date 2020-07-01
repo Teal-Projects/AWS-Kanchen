@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+#==================================================================
+#
+# Script Name	: aws-cli_install.sh                                                                                             
+# Description	: Script for installing AWS CLI tool                                                                                
+# Args          : /                                                                                          
+# Author       	: kanchen Monnin (kanchen.monnin@neofonie.de)                                             
+#
+#==================================================================
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+aws --version
