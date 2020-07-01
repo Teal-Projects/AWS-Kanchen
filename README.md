@@ -52,7 +52,7 @@ We recommend using [aws-vault](https://github.com/99designs/aws-vault/releases/t
 	```
     [profile main]
     region = eu-central-1
-    mfa_serial = arn:aws:iam::XXXXXXXXXX:mfa/kanchen.monnin@neofonie.de
+    mfa_serial = arn:aws:iam::XXXXXXXXXX:mfa/kanchen@mail.com
     ```
 	
     Be sure to use the proper MFA serial, which you can find in the AWS console → Users → (your user) → Security credentials tab → Assigned MFA device field.
@@ -78,7 +78,7 @@ export AWS_NEO_VAULT="domain"
 # ~/.aws/config
 [profile domain]
 region = eu-central-1
-mfa_serial = arn:aws:iam::XXXXXXXXXX:mfa/kanchen.monnin@neofonie.de
+mfa_serial = arn:aws:iam::XXXXXXXXXX:mfa/kanchen@mail.com
 ```
 
 ### Setting up Terraform

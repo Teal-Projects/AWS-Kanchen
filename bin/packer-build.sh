@@ -5,7 +5,7 @@
 # Script Name	:                                                                                              
 # Description	:                                                                                 
 # Args          :                                                                                           
-# Author       	: kanchen Monnin (kanchen.monnin@neofonie.de)                                             
+# Author       	: kanchen Monnin (kanchen@mail.com)                                             
 #
 #==================================================================
 

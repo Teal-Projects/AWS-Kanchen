@@ -5,7 +5,7 @@
 # Script Name	: shopware6-install.sh                                                                                             
 # Description	: Auto install of SHopware 6                                                            
 # Args          :                                                                                           
-# Author       	: kanchen Monnin (kanchen.monnin@neofonie.de)                                             
+# Author       	: kanchen Monnin (kanchen@mail.com)                                             
 #
 #==================================================================
 
