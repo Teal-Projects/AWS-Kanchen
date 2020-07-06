@@ -1,41 +1,41 @@
-# Description 
+h1. Description 
 
 Amazon CloudFront is a content delivery network (CDN) provided by Amazon Web Services. By using a CDN, companies can accelerate delivery of files to users over the Internet while also reducing the load on their own infrastructure. CloudFront is AWS’s own CDN solution that integrates with other AWS products, so it’s convenient for companies already running on AWS.
 
-# Main Features 
+h1. Main Features 
 
-### General :
+h5. General :
 * Object are cached for the life of the TTL
 * You can also write on an edge location (put an object on it).
 * You can clear cached object, at a cost.
 * many websites and applications rely on static files to do most of the work, with only parts of the content customized using Serverless APIs
 * Allows Serverless applications to provide a fast and low-latency experience to end users by making sure that the static parts of their application load fast
 * Data Source :
-	* S3 stadard bucket and S3 websites endpoint.
-	* EC2 and ELB with custom HTTP/HTTPS custome origin.
-	* Lambda@Edge can be placed betwen CloudFront and the Data source or CloudFront and the EndUser.
-	* Media Store & Media packages. For existing or live video content.
-	* CloudWatch. Generates metrics such as total number of requests, error rates, and Lambda@Edge throttles and execution errors.
+** S3 stadard bucket and S3 websites endpoint.
+** EC2 and ELB with custom HTTP/HTTPS custome origin.
+** Lambda@Edge can be placed betwen CloudFront and the Data source or CloudFront and the EndUser.
+** Media Store & Media packages. For existing or live video content.
+** CloudWatch. Generates metrics such as total number of requests, error rates, and Lambda@Edge throttles and execution errors.
 
-### Key terminology :
+h5. Key terminology :
 * Edge location :
-	* Location where content will be cached. This is separate to an AWS Region/AZ
+** Location where content will be cached. This is separate to an AWS Region/AZ
 * Origin :
-	* Origin of all the files that the CDN will distribute. This can be an S3 Bucket, an EC2 Instance, an Elastic Load Balancer or Route53
+** Origin of all the files that the CDN will distribute. This can be an S3 Bucket, an EC2 Instance, an Elastic Load Balancer or Route53
 * Distribution :
-	* This is the name given the CDN which consists of a collection of Edge Locations.
+** This is the name given the CDN which consists of a collection of Edge Locations.
 * Web Distribution :
-	* Typically used for websites.
+** Typically used for websites.
 * RTMP :
-	* Used for Media Streaming.  
+** Used for Media Streaming.  
 
-# Cost Strategies 
+h1. Cost Strategies 
 
-### Pay-per-use :
+h5. Pay-per-use :
 * As the traffic grows, the cost of using CloudFront can increase very rapidly.
 
-# Service constrains 
+h1. Service constrains 
 
-### General :
+h5. General :
 * High cost at scale.
 * You don't have a view of how caching is performed. Can not be tweaked for a precise needs.

@@ -1,19 +1,19 @@
-# Description 
+h1. Description 
 
 
 Elastic Bloc Store, provide persisten block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability 
 
 
-# Main Features 
+h1. Main Features 
  
 
-### Snapshot : 
+h5. Snapshot : 
 * Snapshot exist on S3. Stop the instances befor to take the snapshot. 
 * To move an EC2 volume from one AZ to an other, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ. 
 * To move ans EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to lauch the new EC2 instance in the ne region. 
 
  
-### Encrypt Root Device Volumes & Snapshots 
+h5. Encrypt Root Device Volumes & Snapshots 
 * Snapshot of encrypted volumes are encrypted automatically. Like Volume restored from encrypted snapshot. 
 * You can share with other AWS account or made public a snapshots, but only if they are unencrypted. 
 * You can encrypt root device volumes upon creation of the EC2 instance. 
@@ -24,20 +24,20 @@ Elastic Bloc Store, provide persisten block storage volumes for use with Amazon 
 * Use that AMI to launch new encrypted instances. 
  
 
-### EBS Storage Types : 
+h5. EBS Storage Types : 
 * General Purpose (SSD) 
 * Provisioned IOPS (SSD), for very very fast  IOPS 
 * Throughput Optimised Hard Disk Drive 
 * Cold Hard Disk Drive 
 * Magnetic  
 
-# Cost Strategies 
+h1. Cost Strategies 
 
 https://aws.amazon.com/ebs/pricing/
 
-# Service Bundaries 
+h1. Service Constrains 
 
-### General :
+h5. General :
 * Where ever the instances is the EBS Storage will be in the same region.
 * When an instances is terminated, the root volume is not lonnger available, but the created EBS are still available.
 * Termination Protection is turned off by default.

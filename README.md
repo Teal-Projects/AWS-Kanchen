@@ -71,7 +71,7 @@ In case you already have an aws-vault you can configure which one te «bin/aws-e
 
 ```
 # ~/.bashrc
-export AWS_NEO_VAULT="domain"
+export AWS_VAULT="domain"
 ```
 
 ```

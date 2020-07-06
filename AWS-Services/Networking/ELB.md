@@ -1,8 +1,8 @@
-# Description 
+h1. Description 
 
  “Elastic Load Balancing automatically distributes your incoming application traffic across multiple targets, such as EC2 instances. It monitors the health of registered targets and routes traffic only to the healthy targets. Elastic Load Balancing supports tree types of load balancers: Application Load Balancers, Network Load balancers and Classic Load Balancers.” 
 
-# Main Features 
+h1. Main Features 
 
 General :
 * Instances monitored by ELB are reported as : InService or OutofService
@@ -11,20 +11,20 @@ General :
 
 Types :
 * Application Load Balancer
-	* Are suited for http(s) traffic.
-	* Operate at layer 7
-	* Are appliation aware, they can be parametise to load balance traffic for different language.
+** Are suited for http(s) traffic.
+** Operate at layer 7
+** Are appliation aware, they can be parametise to load balance traffic for different language.
 * Network Load Balancer
-	* Are suited for TCP traffic.
-	* Operate at layer 4 , connection level.
-	* Use for extrem performance.
+** Are suited for TCP traffic.
+** Operate at layer 4 , connection level.
+** Use for extrem performance.
 * Classic Load Balancer
-	* Just just for load balancing at the most effective cost.
-	* You can balnce http(s) applications
-	* You can use layer 7 features.
-	* You can use layer 4 features.
-	* If the application stop responding it will respond with a 504 error.
-		* It does not mean the ELB is the problem . You have to identifiy if the problem is on server or DB. And scale up or down.
+** Just just for load balancing at the most effective cost.
+** You can balnce http(s) applications
+** You can use layer 7 features.
+** You can use layer 4 features.
+** If the application stop responding it will respond with a 504 error.
+*** It does not mean the ELB is the problem . You have to identifiy if the problem is on server or DB. And scale up or down.
 
 X-Forwarded-For header :
 * If you need to get the IPv4 address of your end user.
@@ -36,14 +36,14 @@ Sticky Sessions :
 
 Path Patern :
 * You can create a listeneer with rules to forward requests based on the URL path.
-	* www.myurl.com is redirect to and AZ.
-	* www.myurl.com/images redirect to an other AZ.
+** www.myurl.com is redirect to and AZ.
+** www.myurl.com/images redirect to an other AZ.
 
 Cross Zone Load Balancing :
 * A load balancer can balance traffic to an other Availability Zone.
 
-# Cost Strategies 
+h1. Cost Strategies 
  
 
-# Service constrains 
+h1. Service constrains 
  
